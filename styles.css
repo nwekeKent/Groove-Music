@@ -1,0 +1,320 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Raleway:wght@200;300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    
+
+}
+
+.section .sidebar {
+    width: 22%;
+    height: 87%;
+    background:#f5f5f5;
+    position: relative;
+}
+
+.top-bar {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top:10px;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+.title--bar {
+    display:flex;
+    font-family: 'raleway', sans-serif;
+    font-size: 0.75em;
+   
+
+
+}
+.title--bar h5 {
+    font-size: 0.95em;
+    margin-left: 10%;
+   
+}
+
+.hamburger--bar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:5px;
+    margin-top: 25px;
+}
+
+.hamburger--bar .line {
+    width: 20px;
+    height: 1px;
+    background-color: black;
+}
+
+.search--bar {
+    margin-top: 20px;
+}
+
+.search--bar label {
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+    width: 100%;
+    background-color: #fff;
+    align-items: center;
+    padding: 0 4%;
+}
+
+.search--bar label input {
+    outline: none;
+    border: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+.search--bar label i {
+    font-size: 0.85em;
+   
+}
+
+.sidebar-nav {
+    margin-top: 0.4em;
+}
+
+.nav-item {
+    font-size: 0.82em;
+    font-family: 'raleway', sans-serif;
+    height: 50px;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding: 0 6%;
+
+}
+
+.nav-item i {
+        margin-right: 17px;
+       color: #131315;
+        font-size: 19px;
+}
+
+
+.nav-item img {
+    margin-right: 10px;
+    width: 40px;
+   
+}
+
+.nav-item:hover {
+    background-color:#D0D2DC;
+}
+
+
+
+.active {
+    border-left: 5px solid #1B1B1E;
+}
+.line-div {
+    padding: 0 5%;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color:#D0D2DC;
+}
+
+.sidebar-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+}
+
+.user {
+    display: flex;
+}
+.sidebar-footer .nav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item.spotify {
+    display: flex;
+    justify-content: flex-start;
+    background-color: pink;
+    
+}
+.nav-item.spotify i {
+    font-size: 25px;
+    color: #fff;
+}
+ 
+.section .mainbar {
+    width: 78%;
+    height: 87%;
+    background-color:#fff;
+}
+
+.mainbar .topbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mainbar .topbar .icon-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 35px;
+    
+   
+}
+.icon-div:hover {
+    background-color:#D0D2DC ;
+}
+
+.icon-div.times:hover {
+    background-color:red ;
+}
+
+.music {
+    margin: 0 2%;
+}
+
+.music h1 {
+    font-family: 'raleway',sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.music-nav-div {
+    margin-top: 20px;
+    
+}
+
+.music-nav {
+    display: flex;
+    font-family: 'raleway',sans-serif;
+    border-bottom: 1px solid #D0D2DC;
+    height: 30px;
+    align-items: center;
+    
+}
+
+.music-nav-item {
+        margin-right: 40px;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: grey;
+       
+        height: 100%;
+        
+       
+        
+}
+ 
+.music-nav-item.current {
+    border-bottom: 2px solid #1B1B1E;
+    color: #1B1B1E;
+}
+
+.albums {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.albums .details {
+    display: flex;
+}
+
+.detail {
+    display: flex;
+    margin-right: 23px;
+    font-family: 'raleway',sans-serif;
+}
+
+.detail p {
+    font-size: 0.75em;
+    font-weight: bold;
+}
+
+.detail i {
+    margin-right: 10px;
+}
+
+.album-list {
+    display: grid;
+    grid-template-columns: repeat(5, 160px);
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    margin-top: 20px;
+    
+   
+}
+
+.album {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    font-family: 'raleway',sans-serif;
+}
+.album-detail {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+}
+
+.album img {
+    width: 100%;
+    height: 160px;
+}
+.album h3 {
+    font-size: 0.80em;
+    color: black;
+    font-weight: bold;
+}
+
+.album p {
+    font-size: 0.75em;
+    color: black;
+    
+}
+
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 13%;
+    width: 100%;
+    background-color:#58A4BE;
+}
+
+.footer img {
+    height: 100%;
+    width: 90px;
+}
