@@ -115,17 +115,12 @@ main {
 }
 
 .nav-item i {
-        margin-right: 17px;
+        margin-right: 15px;
        color: #131315;
         font-size: 19px;
 }
 
 
-.nav-item img {
-    margin-right: 10px;
-    width: 40px;
-   
-}
 
 .nav-item:hover {
     background-color:#D0D2DC;
@@ -164,7 +159,9 @@ main {
 .nav-item.spotify {
     display: flex;
     justify-content: flex-start;
-    background-color: pink;
+    background-image: linear-gradient(to right, #F26982 , rgb(245, 49, 82));
+    color: #fff;
+    font-weight: lighter;
     
 }
 .nav-item.spotify i {
@@ -311,10 +308,75 @@ main {
     bottom: 0;
     height: 13%;
     width: 100%;
-    background-color:#58A4BE;
+    background-color:#4E9BA6;
+    display: flex;
+    overflow: hidden;
+   
 }
 
 .footer img {
     height: 100%;
     width: 90px;
+}
+.footer-album {
+    display: flex;
+}
+
+.footer-album-details {
+    display: flex;
+    flex-direction:column;
+    margin-left: 20px;
+    color: #fff;
+    margin-top: 25px;
+    font-family: 'raleway',sans-serif;
+    margin-right: 50px;
+}
+
+.footer-album-details h3 {
+        font-size: 1em;
+        font-weight: 300;
+}
+
+
+.footer-album-details p {
+    font-size: 0.9em;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.footer-music {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+
+}
+
+.footer-music .music-btns {
+    display: flex;
+    color: rgb(235, 229, 229);
+    font-size: 17px;
+    font-weight: lighter;
+    
+   
+}
+
+.music-btns > div {
+    margin-right: 20px;
+}
+.play {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+.shuffle, .prev, .next, .loop {
+    margin-top: 23px;
 }
